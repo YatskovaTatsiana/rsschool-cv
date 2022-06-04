@@ -55,12 +55,12 @@ foreach ($DB in $dir_DB) # 2 BAK
 }
 ```
 ##  Education and courses:
- Name                             |  Year
-:------------------------------------------|:-------------:
-[Udemy - webdeveloper](https://www.udemy.com/course/webdeveloper/)|2022
-[It=academy - "Fundamentals of web technologies" (remotely)](https://www.dist.it-academy.by/)|2021
-Department ASIP qualification Engineer Information Technology| 2008 - 2015
-Gomel State Engineering College, qualification "Technician-programmer"|1996 - 2000
++ Education
+    - Department ASIP qualification Engineer Information Technology  (2015)
+    - Gomel State Engineering College, qualification "Technician-programmer" (2000)
++ Courses    
+    - [Udemy - webdeveloper](https://www.udemy.com/course/webdeveloper/) (2022)
+    - [It=academy - "Fundamentals of web technologies" (remotely)](https://www.dist.it-academy.by/) (2021)
 
 ## Language:
 English level - A1

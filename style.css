@@ -3,3 +3,25 @@
     margin: 0;
     padding: 0ch;
 }
+
+.container{
+    width: 1140px;
+    margin: 0 auto; 
+}
+
+.chapter {
+    text-align: center;
+    color: rgb(48, 31, 119);
+}
+
+.chapter_photo {
+    border-radius: 100px; /* Радиус скругления */
+    margin: 10px;
+    display: inline-block;
+}
+li {
+    list-style-type: none; /* Убираем маркеры у списка */
+}
+   li:before {
+    content: "-"; /* Добавляем в качестве маркера символ */
+ }

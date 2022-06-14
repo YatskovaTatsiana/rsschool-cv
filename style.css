@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0ch;
+}
+
+h2 {
+    padding: 10px 0 10px 0;
+    font-weight: 400;
+}
+
+hr {
+    margin-bottom: 5px;
+}
+
+
+.container {
+    width: 1140px;
+    margin: 0 auto; /* контейнер по центру */
+}
+
+.cv-title {
+    padding: 10px;
+}
+
+.chapter {
+    text-align: center;
+    color: rgb(48, 31, 119);
+}
+.chapter_photo {
+    border-radius: 100px; /* Радиус скругления */
+    margin: 10px;
+}
+.chapter-fio {
+    font-size:30px; 
+    font-weight: bold;
+}
+
+/*list contacts*/
+.cv-contacts {
+    list-style: none;
+}
+.cv-contacts .cv-contacts-text:before {
+    content: "—";
+    margin-right: 10px;
+}
+
+/*list educ and cour*/
+.cv-educ-cour {
+    margin-left: 15px;
+}
+.cv-educ-cour-type {
+    margin-left: 15px;
+    list-style-type: circle;
+}
+
+/*footer*/
+.cv-footer {
+    height: 45px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    margin-top: 10pxg;
+    background-color: rgb(194, 190, 190);
+}
+.cv-footer .cv-footer-item{
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px 75px;
+    text-align: center;
+}
+.cv-footer .cv-footer-item .cv-footer-img {
+    width: 15%; 
+}

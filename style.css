@@ -58,9 +58,10 @@ hr {
 
 
 .cv-footer {
-    height: 50px;
+    height: 45px;
     padding: 10px 0 10px 0;
     text-align: center;
+    margin-top: 10px;
     background-color: rgb(194, 190, 190);
 }
 
@@ -68,7 +69,7 @@ hr {
 .cv-footer .cv-footer-item{
     display: inline-block;
     vertical-align: top;
-    margin: 6px 10px;
+    margin: 6px 75px;
     text-align: center;
 }
 

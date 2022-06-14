@@ -55,8 +55,7 @@ foreach ($DB in $dir_DB) # 2 BAK
 }
 ```
 
-##  Education and courses: git
-+ Education
++ Educatio
     - Department ASIP qualification Engineer Information Technology  (2015)
     - Gomel State Engineering College, qualification "Technician-programmer" (2000)
 + Courses    

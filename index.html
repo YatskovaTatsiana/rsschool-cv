@@ -11,14 +11,14 @@
     <h1 class="chapter">RsSchool-cv-html</h1>
     <section class="cv-title">
         <table>
-            <tr  align="left" valign="middle">
+            <tr>
             <td><img src="img/my_photo.jpg" alt="Photo" class="chapter_photo"></td>
             <td class="chapter-fio"><span>Tatsiana Yatskova</span></td>
             </tr>
         </table>
 
-        <h2>Contacts</h2>
-        <hr>
+    <h2>Contacts</h2>
+    <hr>
         <ul class="cv-contacts">
             <li class="cv-contacts-text">Phone: +375256409181 Life, Viber</li>
             <li class="cv-contacts-text">Marital status: Marrie</li>
@@ -27,58 +27,80 @@
             <li class="cv-contacts-text">E-mail: YatskovaTN@gmail.com</li>
         </ul>
 
-        <h2>About myself:</h2>
-        <hr>
-            <p>14 years experience in IT. Development and maintenance of software
-                for the needs of the enterprise, consultation and technical support for users</p>
+    <h2>About myself:</h2>
+    <hr>
+        <p>14 years experience in IT. Development and maintenance of software
+            for the needs of the enterprise, consultation and technical support for users</p>
 
-        <h2>Skills:</h2>
-        <hr>
-            <p>SQL query language, database administration, web development, programming languages 
+    <h2>Skills:</h2>
+    <hr>
+        <p>SQL query language, database administration, web development, programming languages 
             VFP, C#, work with MS SQL Server, Maria DB, Delphi</p>
-  
-        <h2>Code example: </h2>   
-        <hr>  
+    
+    <h2>Code example: </h2>   
+    <hr>  
         <p>
-            <code>
-                function Get-PSRemove ($day,$file_) # удаляем файлы меньше заданной даты<br>
-                {  <br> 
-	            $count = Get-ChildItem $Target_FSF -File -filter $file_ | Measure-Object | ForEach-Object{ $_.Count }<br>
-                # массив файлов по условию, сортируем по убыванию<br>
-                $table = Get-ChildItem $Target_FSF -Filter $file_ | Sort-Object -Descending $_.BaseName<br>
-        		$ChDaysDel = $table[$day - 2].LastWriteTime<br>
-		        Get-ChildItem -Path $Target_FSF | Where-Object { $_.LastWriteTime -LT $ChDaysDel } | Remove-Item -Recurse -Force<br>
-                }<br>
-                $Target_FSF = $Target_FS+$DB+ "\SQLDataBase\" + $Folder + "\"	<br>	
-                $count = 0<br>
-                if (Test-Path $Target_FSF)<br>
-                {<br>
-                    Get-PSRemove -day 3 $file_<br>
-                }<br>
-            </code>
+        <code>
+            function Get-PSRemove ($day,$file_) # удаляем файлы меньше заданной даты<br>
+            {  <br> 
+            $count = Get-ChildItem $Target_FSF -File -filter $file_ | Measure-Object | ForEach-Object{ $_.Count }<br>
+            # массив файлов по условию, сортируем по убыванию<br>
+            $table = Get-ChildItem $Target_FSF -Filter $file_ | Sort-Object -Descending $_.BaseName<br>
+            $ChDaysDel = $table[$day - 2].LastWriteTime<br>
+            Get-ChildItem -Path $Target_FSF | Where-Object { $_.LastWriteTime -LT $ChDaysDel } | Remove-Item -Recurse -Force<br>
+            }<br>
+            $Target_FSF = $Target_FS+$DB+ "\SQLDataBase\" + $Folder + "\"	<br>	
+            $count = 0<br>
+            if (Test-Path $Target_FSF)<br>
+            {<br>
+                Get-PSRemove -day 3 $file_<br>
+            }<br>
+        </code>
         </p>
 
-        <h2>Education and courses:</h2>
-        <hr>
-            <ul class="cv-educ-cour">
-                <li>Education</li>
-                    <ul type="circle" class="cv-educ-cour">
-                        <li>Department ASIP qualification Engineer Information Technology (2015)</li>
-                        <li>Gomel State Engineering College, qualification "Technician-programmer" (2000)</li>
-                    </ul>
-                <li>Courses</li>
-                    <ul type="circle" class="cv-educ-cour">
-                        <li><a href="https://www.udemy.com/course/webdeveloper/">Udemy - webdeveloper (2022)</a> </li>
-                        <li><a href="https://www.dist.it-academy.by/">Itacademy - "Fundamentals of web technologies" (remotely) (2021)</a></li>
-                    </ul>
-            </ul>
-        <h2>Language:</h2>
-        <hr>
+    <h2>Education and courses:</h2>
+    <hr>
+        <ul class="cv-educ-cour">
+            <li>Education</li>
+                <li class="cv-educ-cour-type">Department ASIP qualification Engineer Information Technology (2015)</li>
+                <li class="cv-educ-cour-type">Gomel State Engineering College, qualification "Technician-programmer" (2000)</li>               
+            <li>Courses</li>             
+                <li class="cv-educ-cour-type"><a href="https://www.udemy.com/course/webdeveloper/">Udemy - webdeveloper (2022)</a> </li>
+                <li class="cv-educ-cour-type"><a href="https://www.dist.it-academy.by/">Itacademy - "Fundamentals of web technologies" (remotely) (2021)</a></li>     
+        </ul>
+            
+    <h2>Language:</h2>
+    <hr>
         <p>English level - A1</p>
 
-    <footer>
+  <!--   <footer class="cv-footer"> -->
+<!--         <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+        <div class="container">
+           <p><a href="https://rs.school/js/" target="_blank">
+                   <img src="./img/rs_school_js.svg" width="50" height="50" alt="RsSchool-Img"></a> 
+                  </p>
+        </div>
+        <div> Gomel © 2022 </div> -->
 
-    </footer>
-</section>
+        <footer class="cv-footer">
+                    <div class="cv-footer-item">
+                        <img src="./img/rs_school_js.svg" alt="1212" class="cv-footer-img">
+                    </div>
+                    <div class="cv-footer-item">
+                        <a href="https://rs.school/js/" target="_blank">
+                            <img src="./img/rs_school_js.svg" alt="RsSchool-Img" class="cv-footer-img">
+                        </a>     
+                    </div>
+                    <div class="cv-footer-item">
+                        <img src="./img/rs_school_js.svg" alt="1212" class="cv-footer-img">
+                    </div>
+        </footer>
+        
+    <!-- </footer> -->
+    </section>
 </body>
 </html>

@@ -13,6 +13,7 @@ hr {
     margin-bottom: 5px;
 }
 
+
 .container {
     width: 1140px;
     margin: 0 auto; /* контейнер по центру */
@@ -47,6 +48,30 @@ hr {
 }
 
 .cv-educ-cour {
-    margin-left: 15px
+    margin-left: 15px;
 }
 
+.cv-educ-cour-type {
+    margin-left: 15px;
+    list-style-type: circle;
+}
+
+
+.cv-footer {
+    height: 50px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    background-color: rgb(194, 190, 190);
+}
+
+
+.cv-footer .cv-footer-item{
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px 10px;
+    text-align: center;
+}
+
+.cv-footer .cv-footer-item .cv-footer-img {
+    width: 15%; 
+}
